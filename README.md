@@ -12,6 +12,7 @@ npm install -g @angular/cli
 **Obs:** Apesar o Angular conter o TypeScript a versão de projetos da microsoft Utilizando Angular requer a instalação do TypeScript nativo.
 
 Escopo do Projeto.
+
 O programa deve identificar para um dado número se este é um número feliz e se é um número sortudo.
 *** Números Felizes ***
 
