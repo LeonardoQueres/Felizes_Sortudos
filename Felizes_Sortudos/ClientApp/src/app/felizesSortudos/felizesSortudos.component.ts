@@ -26,29 +26,29 @@ export class felizesSortudosComponent implements OnInit {
 
     this.EFelizService.VerificarEFeliz(this.felizesSortudos)
       .subscribe(data => this.retornoEFeliz = data.text(),
-        error => console.log(error),
-        () => console.log(this.retornoEFeliz));
+        error => console.log(error));
+        //() => console.log(this.retornoEFeliz));
 
     this.ESortudoService.PostSortudos(this.felizesSortudos)
       .subscribe(data => this.retornoESortudo = data.text(),
-        error => console.log(error),
-        () => console.log(this.retornoESortudo));
+        error => console.log(error));
+        //() => console.log(this.retornoESortudo));
   }
 
-  //onSubmit() {
-  //  this.felizesSortudos.Numero = this.form.controls["Numero"].value;   
+  onSubmit() {
+    this.felizesSortudos.Numero = this.form.controls["Numero"].value;   
 
-  //  this.EFelizService.VerificarEFeliz(this.felizesSortudos)
-  //    .subscribe(data => this.retornoEFeliz = data.text(),
-  //      error => console.log(error),
-  //      () => console.log(this.retornoEFeliz));    
+    this.EFelizService.VerificarEFeliz(this.felizesSortudos)
+      .subscribe(data => this.retornoEFeliz = data.text(),
+        error => console.log(error));
+        //() => console.log(this.retornoEFeliz));    
 
-  //  this.ESortudoService.PostSortudos(this.felizesSortudos)
-  //    .subscribe(data => this.retornoESortudo = data.text(),
-  //      error => console.log(error),
-  //      () => console.log(this.retornoESortudo));
+    this.ESortudoService.PostSortudos(this.felizesSortudos)
+      .subscribe(data => this.retornoESortudo = data.text(),
+        error => console.log(error));
+        //() => console.log(this.retornoESortudo));
 
-  //};
+  };
 
   ngOnInit() {
   }

@@ -1,23 +1,27 @@
 <div class="row">
   <div class="col-xs-12 col-sm-8 col-md-10">
     <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <div class="form-horizontal">
-        <div class="form-group">
-          <label class="control-label col-xs-12 col-sm-1">Número:</label>
-          <div class="col-sm-6">
-            <input class="form-control" type="text" maxlength="10" formControlName="Numero" (keyup)="onKey($event)" (keypress)="numberOnly($event)">
+      <div class="form-horizontal">        
+          <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-6">Digite um Número:</label>
+            <div class="control-label col-sm-6">
+              <input class="form-control" type="text" maxlength="10" formControlName="Numero" (keyup)="onKey($event)" (keypress)="numberOnly($event)">
+            </div>
           </div>
-          <!--<div class="col-sm-6">
-              <button type="submit" [disabled]="!form.valid">Submeter</button>
-          </div>-->
-          <div class="col-sm-6">
-            <span>{{retornoEFeliz}}</span>
+          <div class="form-group">
+            <div class="col-sm-6">
+              <button type="submit" class="btn btn-sm btn-primary" [disabled]="!form.valid">Submeter</button>
+            </div>
           </div>
-          <div class="col-sm-6">
-            <span>{{retornoESortudo}}</span>
+          <div class="form-group">
+            <div class="control-label col-sm-6">
+              <span>{{retornoEFeliz}}</span>
+            </div>
+            <div class="control-label col-sm-6">
+              <span>{{retornoESortudo}}</span>
+            </div>
           </div>
         </div>
-      </div>
     </form>
   </div>
 </div>
