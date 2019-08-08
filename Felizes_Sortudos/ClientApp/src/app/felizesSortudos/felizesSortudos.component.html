@@ -5,7 +5,7 @@
         <div class="form-group">
           <label class="control-label col-xs-12 col-sm-1">Número:</label>
           <div class="col-sm-6">
-            <input class="form-control" type="text" formControlName="Numero">
+            <input class="form-control" type="text" maxlength="10" formControlName="Numero" (keypress)="numberOnly($event)">
           </div>
           <div class="col-sm-6">            
               <button type="submit" [disabled]="!form.valid">Submeter</button>            
