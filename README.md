@@ -3,11 +3,9 @@ Projeto feito utilizando Angular core.
 
 Antes de executar o projeto, deve ser instalado o angular e TypeScript pelo Prompt de Comando.
 
-npm install -g typescript
-
-npm install angular
-
-npm install -g @angular/cli
+  npm install -g typescript
+  npm install angular
+  npm install -g @angular/cli
 
 **Obs:** Apesar o Angular conter o TypeScript a versão de projetos da microsoft Utilizando Angular requer a instalação do TypeScript nativo.
 
