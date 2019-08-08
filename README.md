@@ -1,4 +1,4 @@
-# Felizes_Sortudos
+# Projeto Números Felizes e Sortudos.
 Projeto feito utilizando Angular core.
 
 Para executar o projeto antes deve ser instalado o angular e TypeScript pelo Prompt de Comando.
