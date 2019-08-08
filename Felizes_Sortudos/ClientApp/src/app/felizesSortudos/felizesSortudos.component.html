@@ -5,16 +5,16 @@
         <div class="form-group">
           <label class="control-label col-xs-12 col-sm-1">Número:</label>
           <div class="col-sm-6">
-            <input class="form-control" type="text" maxlength="10" formControlName="Numero" (keypress)="numberOnly($event)">
+            <input class="form-control" type="text" maxlength="10" formControlName="Numero" (keyup)="onKey($event)" (keypress)="numberOnly($event)">
           </div>
-          <div class="col-sm-6">            
-              <button type="submit" [disabled]="!form.valid">Submeter</button>            
+          <!--<div class="col-sm-6">
+              <button type="submit" [disabled]="!form.valid">Submeter</button>
+          </div>-->
+          <div class="col-sm-6">
+            <span>{{retornoEFeliz}}</span>
           </div>
-          <div class="col-sm-6">            
-              {{retornoEFeliz}}            
-          </div>
-          <div class="col-sm-6">            
-              {{retornoESortudo}}            
+          <div class="col-sm-6">
+            <span>{{retornoESortudo}}</span>
           </div>
         </div>
       </div>
