@@ -11,6 +11,8 @@ Antes de executar o projeto, deve ser instalado o angular e TypeScript pelo Prom
 
 **Obs:** Apesar o Angular conter o TypeScript a versão de projetos da microsoft Utilizando Angular requer a instalação do TypeScript nativo.
 
+**Obs 2:** Deve estar instalado no computador a versão do .net core 2.2 (Compatible with Visual Studio)
+
 Escopo do Projeto.
 
 O programa deve identificar para um dado número se este é um número feliz e se é um número sortudo.
