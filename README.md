@@ -9,7 +9,8 @@ Antes de executar o projeto, deve ser instalado o angular e TypeScript pelo Prom
   
   npm install -g @angular/cli
   
-  **Instalação do certificado https dev **
+  **Instalação do certificado https dev**
+
   dotnet dev-certs https --trust
 
 **Obs:** Apesar o Angular conter o TypeScript a versão de projetos da microsoft Utilizando Angular requer a instalação do TypeScript nativo.
